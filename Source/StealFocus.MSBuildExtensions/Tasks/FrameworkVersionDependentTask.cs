@@ -2,15 +2,10 @@
 {
     using System.Globalization;
 
-    using Microsoft.Build.Framework;
     using Microsoft.Build.Utilities;
 
     public abstract class FrameworkVersionDependentTask : Task
     {
-        /// <summary>
-        /// Gets or sets the .NET Framework version.
-        /// </summary>
-        [Required]
         public string FrameworkVersion { get; set; }
 
         /// <summary>
@@ -37,6 +32,11 @@
             if (this.FrameworkVersion == FrameworkVersions.Version40)
             {
                 return TargetDotNetFrameworkVersion.Version40;
+            }
+
+            if (string.IsNullOrEmpty(this.FrameworkVersion))
+            {
+                return TargetDotNetFrameworkVersion.VersionLatest;
             }
 
             string exceptionMessage = string.Format(CultureInfo.CurrentCulture, "The .NET Framework version '{0}' was not supported.", this.FrameworkVersion);

@@ -7,3 +7,4 @@
 // Error ListQueues, point to "Suppress Message(s)", and click 
 // "In Project Suppression File".
 // You do not need to add suppressions to this file manually.
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1707:IdentifiersShouldNotContainUnderscores", Scope = "member", Target = "StealFocus.MSBuildExtensions.Tests.Tasks.GacUninstallTests.#IntegrationTest_That_GacUninstall_Is_A_Success()")]
