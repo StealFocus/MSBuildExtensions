@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>StealFocus.BizTalkExtensions</id>
+    <version>1.0.30208.0</version>
+    <authors>Callum Hibbert</authors>
+    <owners>Callum Hibbert</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>StealFocus BizTalkExtensions package.</description>
+    <copyright>Copyright StealFocus. All rights reserved.</copyright>
+    <tags>StealFocus BizTalkExtensions</tags>
+    <references>
+      <reference file="StealFocus.BizTalkExtensions.dll" />
+    </references>
+  </metadata>
+</package>
