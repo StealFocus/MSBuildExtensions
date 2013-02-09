@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project 
+  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <!-- IMPORTANT - you must import these targets for the build scripts to function. -->
+  <Import Project="..\packages\StealFocus.Build.1.1.30117.0\Scripts\StealFocus.Build.tasks" />
+
+  <PropertyGroup>
+    <CompanyName>StealFocus</CompanyName>
+    <Culture>en-GB</Culture>
+    <ProductName>MSBuildExtensions</ProductName>
+    <StrongNamePublicKey>0024000004800000940000000602000000240000525341310004000001000100d96eedc7a69edc51f133a1d77f0c3c7b0166f93794a9e0c2f916623334e16256da626428c6147e35e54e704d430050a27e83c3cd8950be2337ba87616a84b294f92d4ced0c2ab1c95ee9f9916d068324c8e556c4207eab179bcfcf61c8a140531fb595f27035ba4b60c7cc49fc2f96c6099b81c228aac63b13d4c73596d7abd0</StrongNamePublicKey>
+    <StrongNamePublicKeyToken>2c1632ee9cdd9d5b</StrongNamePublicKeyToken>
+    <StyleCopVersion>4.7</StyleCopVersion>
+  </PropertyGroup>
+
+</Project>
