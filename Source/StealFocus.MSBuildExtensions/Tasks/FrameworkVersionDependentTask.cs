@@ -8,13 +8,9 @@
     {
         public string FrameworkVersion { get; set; }
 
-        /// <summary>
-        /// Get the <see cref="TargetDotNetFrameworkVersion" /> from the <see cref="FrameworkVersion"/> property.
-        /// </summary>
-        /// <returns>A <see cref="TargetDotNetFrameworkVersion" />.</returns>
         protected TargetDotNetFrameworkVersion GetTargetDotNetFrameworkVersion()
         {
-            if (this.FrameworkVersion == FrameworkVersions.Version20)
+            if (this.FrameworkVersion == FrameworkVersions.Version20Simple || this.FrameworkVersion == FrameworkVersions.Version20Qualified)
             {
                 return TargetDotNetFrameworkVersion.Version20;
             }
@@ -29,7 +25,7 @@
                 return TargetDotNetFrameworkVersion.Version35;
             }
 
-            if (this.FrameworkVersion == FrameworkVersions.Version40)
+            if (this.FrameworkVersion == FrameworkVersions.Version40Simple || this.FrameworkVersion == FrameworkVersions.Version40Qualified)
             {
                 return TargetDotNetFrameworkVersion.Version40;
             }
@@ -43,30 +39,19 @@
             throw new MSBuildExtensionsException(exceptionMessage);
         }
 
-        /// <summary>
-        /// Holds a set of valid .NET Framework versions.
-        /// </summary>
         protected static class FrameworkVersions
         {
-            /// <summary>
-            /// Version 2.0.
-            /// </summary>
-            public const string Version20 = "2.0";
+            public const string Version20Simple = "2.0";
 
-            /// <summary>
-            /// Version 3.0.
-            /// </summary>
+            public const string Version20Qualified = "2.0.50727";
+
             public const string Version30 = "3.0";
 
-            /// <summary>
-            /// Version 3.5.
-            /// </summary>
             public const string Version35 = "3.5";
 
-            /// <summary>
-            /// Version 3.5.
-            /// </summary>
-            public const string Version40 = "4.0";
+            public const string Version40Simple = "4.0";
+
+            public const string Version40Qualified = "4.0.30319";
         }
     }
 }
