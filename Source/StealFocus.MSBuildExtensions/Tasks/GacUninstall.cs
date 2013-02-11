@@ -57,6 +57,8 @@ namespace StealFocus.MSBuildExtensions.Tasks
             set;
         }
 
+        public string FusionAssemblyName { get; set; }
+
         public override bool Execute()
         {
             if (this.AssemblyName == Wildcard)
@@ -69,6 +71,11 @@ namespace StealFocus.MSBuildExtensions.Tasks
             {
                 Log.LogError("Please supply an Assembly name longer than {0} characters to reduce the risk of removing Assemblies un-intentionally.", MinimumAssemblyNameLength);
                 return false;
+            }
+
+            if (!string.IsNullOrEmpty(this.FusionAssemblyName))
+            {
+                GlobalAssemblyCache.FusionAssemblyName = this.FusionAssemblyName;
             }
 
             GlobalAssemblyCacheItem[] gacAssemblies = GlobalAssemblyCache.GetAssemblyList(GlobalAssemblyCacheCategoryTypes.Gac);

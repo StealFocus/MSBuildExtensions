@@ -10,7 +10,8 @@
       AssemblyName="Acme.PetShop*" 
       PublicKeyToken="*" 
       Version="*" 
-      Locale="*" />
+      Locale="*"
+      FusionAssemblyName="mscorcfg, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   </Target>
 
 </Project>

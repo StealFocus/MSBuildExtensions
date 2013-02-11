@@ -48,8 +48,9 @@
   <ItemGroup>
     <Reference Include="Microsoft.Build.Framework" />
     <Reference Include="Microsoft.Build.Utilities.v4.0" />
-    <Reference Include="StealFocus.BclExtensions">
-      <HintPath>..\packages\StealFocus.BclExtensions.1.0.30208.0\lib\net40-Full\StealFocus.BclExtensions.dll</HintPath>
+    <Reference Include="StealFocus.BclExtensions, Version=1.0.30211.0, Culture=neutral, PublicKeyToken=3aa2e235a0ab8291, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\StealFocus.BclExtensions.1.0.30211.0\lib\net40-Full\StealFocus.BclExtensions.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
