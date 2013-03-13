@@ -117,6 +117,8 @@
     <ItemGroup>
       <StlFcsLibFiles Include="$(BuildDirectoryPath)\Release\StealFocus.MSBuildExtensions.dll" />
       <StlFcsLibFiles Include="$(BuildDirectoryPath)\Release\StealFocus.MSBuildExtensions.pdb" />
+      <StlFcsLibFiles Include="$(BuildDirectoryPath)\Release\StealFocus.MSBuildExtensions.Tasks.BizTalk.dll" />
+      <StlFcsLibFiles Include="$(BuildDirectoryPath)\Release\StealFocus.MSBuildExtensions.Tasks.BizTalk.pdb" />
     </ItemGroup>
     <Copy
       SourceFiles="@(StlFcsLibFiles)"
